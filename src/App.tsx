@@ -1,11 +1,8 @@
+import'./index.css';
 function App() {
   return (
     <>
-      <div className="container mx-auto bg-red-950 ">
-        <h1 className="text-2xl">Título Centrando</h1>
-        <p>Este es un párrafo dentro del contenedor.</p>
-
-      </div>
+      <div className='div-main absolute top-0 z-[-2] w-screen min-h-screen'></div>
     </>
   );
 }

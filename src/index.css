@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.div-main{
+    background: rgb(108,36,181);
+    background: radial-gradient(circle, rgba(108,36,181,0.2) 0%, rgba(108,36,181,0) 50%);
+}
