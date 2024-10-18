@@ -13,7 +13,7 @@ const navItems = [
     url: "/history",
   },
   {
-    title: " Create Video",
+    title: " Video",
     label: "Video",
     url: "/video",
   },
