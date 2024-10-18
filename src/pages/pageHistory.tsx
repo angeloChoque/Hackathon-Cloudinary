@@ -1,10 +1,10 @@
-import Buttoncloudinary from "@/components/buttoncloudinary";
+import ButtonCloudinary from "@/components/buttonCloudinary";
 
 const PageHistory = () => {
   return (
     <div>
       <p>asasd</p>
-      <Buttoncloudinary />
+      <ButtonCloudinary />
     </div>
   );
 };
