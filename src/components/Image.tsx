@@ -13,7 +13,7 @@ export const Image = () => {
 
   const cld = new Cloudinary({
     cloud: {
-      cloudName: "dkepusbx2",
+      cloudName: process.env.CLOUD_NAME,
     },
   });
 
