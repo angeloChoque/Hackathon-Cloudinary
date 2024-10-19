@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <>
@@ -9,12 +11,12 @@ const Hero = () => {
               Crea una historia aterradora con tu imagen
             </h2>
             <div className="buttons">
-              <a href="/history" className="button">
+              <Link to={"/history"} className="button">
                 Comenzar
-              </a>
-              <a href="#" className="button is-outlined">
+              </Link>
+              <Link to={'#'} className="button is-outlined">
                 Ver las historias
-              </a>
+              </Link>
             </div>
           </div>
           <div className="logo-container">
