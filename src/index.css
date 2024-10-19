@@ -149,7 +149,7 @@
   }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 500px) {
   .hero-body {
     grid-template-columns: 1fr;
     grid-template-areas: 'logo-container' 'text-column';
