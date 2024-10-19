@@ -87,7 +87,7 @@
 
 .hero-body {
   display: grid;
-  padding: 5vw;
+  margin: 5vw;
   max-width: 800px;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -116,8 +116,9 @@
   display: flex;
   margin-top: 3rem;
   width: 100%;
-  justify-content: space-between;
+  justify-content: start;
   font-size: clamp(.6rem, 1.4vw, 1.5rem);
+  gap: 3vw;
 }
 
 .button {
@@ -126,7 +127,9 @@
   justify-content: center;
   text-align: center;
   color: white;
-  padding: clamp(.3rem, 1.4vw, 1rem) clamp(.6rem, 1.8vw, 2rem);;
+  min-width: 15vw;
+  padding-block: 2vh;
+  padding-inline: 2vw;
   border-radius: 10rem;
   font-weight: 600;
   cursor: pointer;
@@ -140,6 +143,10 @@
 .is-outlined {
   background-color: transparent;
   border: 1px solid #6d24b5;
+
+  &:hover {
+    filter: drop-shadow(0 0 0.5rem rgba(255, 117, 24, 1));
+  }
 }
 
 @media screen and (max-width: 340px) {
@@ -159,6 +166,13 @@
     .buttons{
       justify-content: center;
       gap: 1rem;
+
+      .button {
+        min-width: 20vw;
+        padding-block: 1vh;
+        padding-inline: 6vw;
+        font-size: clamp(.6rem, 1.4vw, 1.5rem);
+      }
     }
   }
 
