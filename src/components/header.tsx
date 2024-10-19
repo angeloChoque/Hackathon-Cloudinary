@@ -13,7 +13,7 @@ const navItems = [
     url: "/history",
   },
   {
-    title: " Video",
+    title: "Video",
     label: "Video",
     url: "/video",
   },
@@ -40,7 +40,7 @@ const Header = () => {
         isScrolled ? "bg-[#252527] shadow-lg" : "bg-transparent"
       }`}
     >
-      <nav className="flex justify-center space-x-4">
+      <nav className="flex space-x-4">
         {navItems.map((navs) => {
           return (
             <Link
