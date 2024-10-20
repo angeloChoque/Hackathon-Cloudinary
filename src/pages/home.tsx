@@ -1,4 +1,5 @@
 import Hero from "../components/hero";
+import HorrorStory from '../components/history-test';
 const Home = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <HorrorStory />
     </>
   );
 };
