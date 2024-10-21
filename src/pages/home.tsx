@@ -1,5 +1,6 @@
+import ButtonCloudinary from "@/components/buttonCloudinary";
 import Hero from "../components/hero";
-import HorrorStory from '../components/history-test';
+import { Image } from '../components/Image';
 const Home = () => {
   return (
     <>
@@ -22,7 +23,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <HorrorStory />
+      {/* <HorrorStory /> */}
+      <ButtonCloudinary />
+      <Image/>
     </>
   );
 };

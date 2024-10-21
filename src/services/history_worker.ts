@@ -2,7 +2,7 @@
 // api.ts - Servicio para interactuar con el Worker
 const WORKER_URL = 'https://tramaflow-history-teller.emmanu20021.workers.dev'; // Reemplaza con tu URL real
 
-interface StoryParams {
+export interface StoryParams {
   gender?: string;
   language?: string;
 }
