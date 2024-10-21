@@ -1,113 +1,80 @@
+import ButtonCloudinary from "@/components/buttonCloudinary";
 import Drawer from "@/components/Drawer";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { Image } from "@/components/Image";
+import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { ImageIcon } from "lucide-react";
 
 export default function PageHistory() {
   return (
     <>
-      <Drawer>
-        <ScrollArea>
-          <div className="space-y-6">
-            <h1 className="text-3xl font-bold">Dashboard</h1>
-            <p>
-              Welcome to your dashboard. Here you can find a quick overview of
-              your recent activities and shortcuts to important sections.
-            </p>
+      <div className="gradient-decoration">
+        <Drawer>
+          <div className="p-6 bg-transparent text-white min-h-screen">
+            <h1 className="text-4xl font-bold mb-8 text-center">
+              Crea tu historia
+            </h1>
+            <div className="flex items-center justify-center">
+              <Card className="w-[26rem]  h-96 md:w-[40rem] bg-transparent border-dashed border-2 border-gray-600  flex flex-col items-center justify-center ">
+                <ImageIcon className="w-32 h-32 text-gray-400 mb-4" />
 
-            <section className="space-y-4">
-              <h2 className="text-2xl font-semibold">Recent Activities</h2>
-              <ul className="list-disc pl-5 space-y-2">
-                <li>Completed a task: "Update user profile"</li>
-                <li>Added a new project: "Redesign landing page"</li>
-                <li>Reviewed team member's code changes</li>
-              </ul>
-            </section>
-
-            <section className="space-y-4">
-              <h2 className="text-2xl font-semibold">Upcoming Deadlines</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="p-4 border rounded-lg">
-                  <h3 className="text-xl font-medium">Project Launch</h3>
-                  <p>Due: October 25, 2024</p>
-                </div>
-                <div className="p-4 border rounded-lg">
-                  <h3 className="text-xl font-medium">Client Presentation</h3>
-                  <p>Due: November 5, 2024</p>
-                </div>
+                <p className="text-gray-400 text-lg">Sube tu Imagen</p>
+              </Card>
+            </div>
+            <div className="my-5 text-center">
+              <ButtonCloudinary />
+            </div>
+            <Separator color="white" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-5">
+              <div>
+                <h2 className="text-2xl font-semibold mb-4">Tu historia</h2>
+                <p className="w-full h-64 bg-transparent text-white border-none resize-none">
+                  asdasddasddsa asdasd adasd asdadadadasdadad Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Iure ad repellendus
+                  ipsam corporis et illo sit ducimus aspernatur voluptatum
+                  expedita fugiat, voluptates unde, libero rem? Consectetur,
+                  animi quisquam. Velit, natus? Lorem ipsum dolor sit amet
+                  consectetur, adipisicing elit. Repellendus veritatis nostrum
+                  quam doloribus sapiente repudiandae voluptates. Voluptatem,
+                  tenetur cupiditate. Saepe laboriosam, illum perferendis nam
+                  harum facilis fugiat expedita corporis dolores! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Quasi cupiditate
+                  placeat perferendis nesciunt temporibus laboriosam tenetur
+                  ipsum, sunt ea possimus! Quos nisi ut recusandae minus
+                  blanditiis ab voluptatem vitae reprehenderit. Lorem ipsum,
+                  dolor sit amet consectetur adipisicing elit. Tempora quas
+                  earum eaque id quidem eveniet officiis quaerat sit voluptas,
+                  eos vero blanditiis perspiciatis dignissimos sed deleniti
+                  minus animi incidunt iusto. Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Iste cupiditate labore dolorem
+                  asperiores, porro culpa, odio ipsum vel ea quasi qui quas
+                  nesciunt sed iusto quia expedita! Odio, tenetur sit! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Magni et
+                  nemo, provident fugiat laudantium eveniet adipisci fugit
+                  deserunt tempore voluptate soluta atque magnam exercitationem
+                  sapiente voluptatem at modi. Laboriosam, eum.
+                </p>
               </div>
-            </section>
-
-            <section className="space-y-4">
-              <h2 className="text-2xl font-semibold">Quick Links</h2>
-              <nav className="space-y-2">
-                <a
-                  href="/profile"
-                  className="block text-blue-500 hover:underline"
-                >
-                  Edit Profile
-                </a>
-                <a
-                  href="/settings"
-                  className="block text-blue-500 hover:underline"
-                >
-                  Account Settings
-                </a>
-                <a
-                  href="/projects"
-                  className="block text-blue-500 hover:underline"
-                >
-                  View Projects
-                </a>
-              </nav>
-            </section>
-            <section className="space-y-4">
-              <h2 className="text-2xl font-semibold">Quick Links</h2>
-              <nav className="space-y-2">
-                <a
-                  href="/profile"
-                  className="block text-blue-500 hover:underline"
-                >
-                  Edit Profile
-                </a>
-                <a
-                  href="/settings"
-                  className="block text-blue-500 hover:underline"
-                >
-                  Account Settings
-                </a>
-                <a
-                  href="/projects"
-                  className="block text-blue-500 hover:underline"
-                >
-                  View Projects
-                </a>
-              </nav>
-            </section>
-            <section className="space-y-4">
-              <h2 className="text-2xl font-semibold">Quick Links</h2>
-              <nav className="space-y-2">
-                <a
-                  href="/profile"
-                  className="block text-blue-500 hover:underline"
-                >
-                  Edit Profile
-                </a>
-                <a
-                  href="/settings"
-                  className="block text-blue-500 hover:underline"
-                >
-                  Account Settings
-                </a>
-                <a
-                  href="/projects"
-                  className="block text-blue-500 hover:underline"
-                >
-                  View Projects
-                </a>
-              </nav>
-            </section>
+              <div>
+                <Card className="bg-transparent border-none overflow-hidden">
+                  <CardContent className="p-0">
+                    <img
+                      src="https://images.unsplash.com/photo-1445499348736-29b6cdfc03b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="TRAMAFLOW Logo"
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="p-6">
+                      <h3 className="text-2xl font-bold mb-2">TRAMAFLOW</h3>
+                      <p className="text-gray-400">A STORYTELLING WEB APP</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+            <Image />
           </div>
-        </ScrollArea>
-      </Drawer>
+        </Drawer>
+      </div>
     </>
   );
 }

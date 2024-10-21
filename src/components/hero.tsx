@@ -14,7 +14,7 @@ const Hero = () => {
               <Link to={"/history"} className="button">
                 Comenzar
               </Link>
-              <Link to={'#'} className="button is-outlined">
+              <Link to={"#"} className="button is-outlined">
                 Ver las historias
               </Link>
             </div>

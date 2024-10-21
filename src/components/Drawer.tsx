@@ -1,46 +1,75 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Switch } from "@/components/ui/switch";
 
 const Drawer = ({ children }: { children: JSX.Element }) => {
   return (
-    <div className="flex h-screen ">
-      <div className="w-64 flex-shrink-0 p-5 mt-10  ">
-        <Card className="h-[80vh] flex flex-col shadow-xl border-none bg-[#252527]">
+    <div className="flex h-screen">
+      <div className="w-64 flex-shrink-0 p-5 mt-16 hidden lg:block">
+        <Card className="h-[80vh] flex flex-col shadow-xl border-none bg-[#252527] text-white">
           <CardHeader className="flex-shrink-0">
-            <CardTitle>Floating Drawer</CardTitle>
+            <CardTitle className="text-2xl underline-offset-8">
+              Settings
+            </CardTitle>
           </CardHeader>
           <ScrollArea className="flex-grow">
             <CardContent>
-              <nav className="space-y-2">
-                <a href="#" className="block hover:underline">
-                  Home
-                </a>
-                <a href="#" className="block hover:underline">
-                  About
-                </a>
-                <a href="#" className="block hover:underline">
-                  Services
-                </a>
-                <a href="#" className="block hover:underline">
-                  Contact
-                </a>
-              </nav>
-              <div className="mt-4 space-y-4">
-                <p>This is a floating drawer that looks like a card.</p>
-                <p>
-                  It floats over the background without being attached to the
-                  edges.
-                </p>
-                <p>
-                  You can add any content here, such as navigation links,
-                  settings, or other information.
-                </p>
+              <div className="mt-2">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span>Zombie</span>
+                    <Switch />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Vampiro</span>
+                    <Switch />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Licántropo</span>
+                    <Switch />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Licántropo</span>
+                    <Switch />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Licántropo</span>
+                    <Switch />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Licántropo</span>
+                    <Switch />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Licántropo</span>
+                    <Switch />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Licántropo</span>
+                    <Switch />
+                  </div>
+                </div>
+                <div className="mt-4">
+                  <label
+                    htmlFor="prompt"
+                    className="block text-sm font-medium text-gray-300"
+                  >
+                    Prompt:
+                  </label>
+                  <textarea
+                    id="prompt"
+                    name="prompt"
+                    rows={3}
+                    className="mt-1 block w-full p-2 rounded-md bg-[#1e1e1f] text-white border-none focus:ring-2 focus:ring-purple-500"
+                    placeholder="Escribe tu prompt aquí..."
+                  />
+                </div>
               </div>
             </CardContent>
           </ScrollArea>
         </Card>
       </div>
-      <main className="flex-1 overflow-y-auto pt-10">{children}</main>
+      <main className="flex-1 pt-10">{children}</main>
     </div>
   );
 };
