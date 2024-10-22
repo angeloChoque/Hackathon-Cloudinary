@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect, useState } from 'react';
-import { getHorrorStory } from '../services/history_worker';
+import React, { useEffect, useState } from "react";
+import { getHorrorStory } from "../services/history_worker";
 
 interface StoryResponse {
   inputs: any;
@@ -17,11 +16,14 @@ const HorrorStory: React.FC = () => {
   useEffect(() => {
     const fetchStory = async () => {
       try {
-        const data = await getHorrorStory({ gender: 'male', language: 'Spanish' });
+        const data = await getHorrorStory({
+          gender: "male",
+          language: "Spanish",
+        });
         setStoryData(data);
       } catch (err) {
         console.error(err);
-        setError('Failed to load the story');
+        setError("Failed to load the story");
       } finally {
         setLoading(false);
       }
@@ -39,7 +41,7 @@ const HorrorStory: React.FC = () => {
       {storyData?.map((task, index) => (
         <div key={index}>
           <h2>Chapter {index + 1}</h2>
-          <p>{task.response.response}</p> {/* Extraer el valor adecuado */}
+          <p>{task.response.response}</p>
         </div>
       ))}
     </div>

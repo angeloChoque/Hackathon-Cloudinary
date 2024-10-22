@@ -28,26 +28,6 @@ const Drawer = ({ children }: { children: JSX.Element }) => {
                     <span>Licántropo</span>
                     <Switch />
                   </div>
-                  <div className="flex items-center justify-between">
-                    <span>Licántropo</span>
-                    <Switch />
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>Licántropo</span>
-                    <Switch />
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>Licántropo</span>
-                    <Switch />
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>Licántropo</span>
-                    <Switch />
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>Licántropo</span>
-                    <Switch />
-                  </div>
                 </div>
                 <div className="mt-4">
                   <label
