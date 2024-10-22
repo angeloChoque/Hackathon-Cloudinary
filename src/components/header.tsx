@@ -13,9 +13,9 @@ const navItems = [
     url: "/history",
   },
   {
-    title: "Video",
-    label: "Video",
-    url: "/video",
+    title: "Credits",
+    label: "Credits",
+    url: "/credits",
   },
 ];
 
@@ -36,8 +36,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed mt-1 top-0 left-1/2 transform -translate-x-1/2 w-auto px-3 py-1  transition-all duration-300 rounded-xl ${
-        isScrolled ? "bg-[#252527] shadow-lg" : "bg-transparent"
+      className={`fixed mt-1 top-0 left-1/2 transform -translate-x-1/2 w-auto px-3 py-1 transition-all duration-300 rounded-xl z-10 ${
+        isScrolled ? "bg-[#252527] shadow-lg" : "bg-transparent "
       }`}
     >
       <nav className="flex space-x-4">

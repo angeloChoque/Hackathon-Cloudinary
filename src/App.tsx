@@ -17,10 +17,6 @@ const router = createBrowserRouter([
         path: "/history",
         element: <PageHistory />,
       },
-      {
-        path: "/video",
-        element: <p>asdasd</p>,
-      },
     ],
   },
 ]);
