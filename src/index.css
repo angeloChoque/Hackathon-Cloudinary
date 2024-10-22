@@ -95,6 +95,16 @@
   gap: 2rem;
 }
 
+.stories-body{
+  display: flex;
+  flex-direction: column;
+  margin-inline: 5vw;
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
 .gradient-title {
   display: flex;
   font-size: clamp(2rem, 5vw, 3rem);
@@ -151,7 +161,6 @@
 
 .community-stories {
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
